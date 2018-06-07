@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal</title>
+    <title>Crystal Collector Game</title>
 
     <!-- Stylesheets & jQuery -->
     <link rel="sylesheet" href="assets/css/reset.css">
@@ -12,11 +12,11 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">    
 
 </head>
-<body>
-    <div class="container">
+<body style="background: url('assets/images/crystalbg.jpg') no-repeat center; background-size: cover; height=100%;">
+    <div class="container" style="text-align:center; font-family: 'Handlee', cursive;">
 
         <!-- Title Div -->
         <div class="row" style="margin-bottom: 15px; background: lavender;">
@@ -26,7 +26,7 @@
 
         <!-- Instructions -->
         <div class="row" style="margin-bottom: 15px; background: lavender;">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h3>Instructions</h3>
                 <p>The goal is to match the randomly generated number!</p>
                 <p>Each crystal will randomly assigned a value at the start of each game.</p>
@@ -83,7 +83,7 @@
 
         <!-- Wins/Losses -->
         <div class="row" style="margin-bottom: 15px; background: lavender;">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h5 id="wins">Wins: </h4>
                 <h5 id="losses">Losses: </h4>
             </div>

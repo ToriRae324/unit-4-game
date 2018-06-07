@@ -36,6 +36,23 @@ $(document).ready(function () {
         $("#currentScore").html(currentScore);
     };
 
+    // win = add win, update score, alert, start new game
+    function youWin () {
+        updateScore();
+        wins++;
+        $("#wins").html("Wins: " + wins);
+        alert("You win! " + numberToMatch + "|" + currentScore );
+        newGame();
+    }
+
+    // lose = add loss, update score, alert, start new game
+    function youLose() {
+        updateScore();
+        losses++;
+        $("#losses").html("Losses: " + losses);
+        alert("Sorry... " + numberToMatch + "|" + currentScore );
+        newGame();
+    };
 
 
     // On Click - Generate crystal1 value between 1-12;
@@ -47,14 +64,10 @@ $(document).ready(function () {
         // define win; push to #wins
         // define loss; push to #losses
         if (currentScore === numberToMatch) {
-            wins++;
-            $("#wins").html("Wins: " + wins);
-            newGame();
+            youWin();
         }
         if (currentScore > numberToMatch) {
-            losses++;
-            $("#losses").html("Losses: " + losses);
-            newGame();
+            youLose();
         }
     });
 
@@ -67,14 +80,10 @@ $(document).ready(function () {
         // define win; push to #wins
         // define loss; push to #losses
         if (currentScore === numberToMatch) {
-            wins++;
-            $("#wins").html("Wins: " + wins);
-            newGame();
+            youWin();
         }
         if (currentScore > numberToMatch) {
-            losses++;
-            $("#losses").html("Losses: " + losses);
-            newGame();
+            youLose();
         }
     });
 
@@ -87,14 +96,10 @@ $(document).ready(function () {
         // define win; push to #wins
         // define loss; push to #losses
         if (currentScore === numberToMatch) {
-            wins++;
-            $("#wins").html("Wins: " + wins);
-            newGame();
+            youWin();
         }
         if (currentScore > numberToMatch) {
-            losses++;
-            $("#losses").html("Losses: " + losses);
-            newGame();
+            youLose();
         }
     });
 
@@ -107,14 +112,10 @@ $(document).ready(function () {
         // define win; push to #wins
         // define loss; push to #losses
         if (currentScore === numberToMatch) {
-            wins++;
-            $("#wins").html("Wins: " + wins);
-            newGame();
+            youWin();
         }
         if (currentScore > numberToMatch) {
-            losses++;
-            $("#losses").html("Losses: " + losses);
-            newGame();
+            youLose();
         }
     });
 
