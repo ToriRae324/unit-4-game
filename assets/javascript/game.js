@@ -57,7 +57,6 @@ $(document).ready(function () {
 
     // On Click - Generate crystal1 value between 1-12;
     $("#crystal1").on("click", function(){
-        console.log("crystal1: " + crystal1);
         currentScore += crystal1;
         updateScore();
 
@@ -73,7 +72,6 @@ $(document).ready(function () {
 
     // On Click - Generate crystal2 value between 1-12;
     $("#crystal2").on("click", function(){
-        console.log("crystal2: " + crystal2);
         currentScore += crystal2;
         updateScore();
 
@@ -89,7 +87,6 @@ $(document).ready(function () {
 
     // Generate crystal3 value between 1-12
     $("#crystal3").on("click", function(){
-        console.log("crystal3: " + crystal3);
         currentScore += crystal3;
         updateScore();
 
@@ -105,7 +102,6 @@ $(document).ready(function () {
 
     // Generate crystal1 value between 1-12; put in #crystal 1
     $("#crystal4").on("click", function(){
-        console.log("crystal4: " + crystal4);
         currentScore += crystal4;
         updateScore();
 
